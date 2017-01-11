@@ -1,13 +1,114 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
+<div class="container">
+<!-- navbar -->
+	<div>
+		<header>
+			<nav>	
+				<ul id="nav">
+					<li>View Music</li>
+					<li>|</li>
+					<li><a href="#">Add Music</a></li>
+					<li>|</li>
+					<li><a href="#">Profile</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
+<!-- end navbar -->
+
+<!-- filter options left side panel -->
+<!-- song-lenth needs to slide use input type="range"-->
+
+	<div id="option-and-names-container">
+		<div id="song-options-panel">
+			<section>
+					<div class="song-length">
+						<label for="song-length">Song Length:</label><br> <!--need to better understand these values from MDN-->
+						<input type="range" name="song-length" id="song-length" min="0"	max="100" step="1.0" value="50" /> 
+					</div>
+			</section>
+			<div class="artist">
+		          <label name="artist">Artist:</label><br>
+		            <select id="artist">
+		              <option value="">Brian Eno</option><!--populate with artists-->
+		              <option value="">Brian Eno</option><!--populate with artists-->
+		              <option value="">Brian Eno</option><!--populate with artists-->
+		              <option value="">Brian Eno</option><!--populate with artists-->
+		              <option value="">Brian Eno</option><!--populate with artists-->
+		            </select><br>
+			</div></br>
+			<div class="Album">
+		      <label name="Album">Album:</label><br>
+		        <select id="Album">
+		          <option value="">Reflection</option><!--populate with albums-->
+		          <option value="">Reflection</option><!--populate with albums-->
+		          <option value="">Reflection</option><!--populate with albums-->
+		          <option value="">Reflection</option><!--populate with albums-->
+		          <option value="">Reflection</option><!--populate with albums-->
+		        </select><br>
+			</div></br> 
+
+			<div class="genre-list">
+				<p>Genre:</p>
+					<ul id="genres">
+						<li>
+							<input type="checkbox" id="genre-right-1">
+							<label class="genre" for="genre-right-1">genre</label>
+						</li>
+						<li>
+							<input type="checkbox" id="genre-right-2">
+							<label class="genre" for="genre-right-2">genre</label>
+						</li>
+						<li>
+							<input type="checkbox" id="genre-right-3">
+							<label class="genre" for="genre-right-3">genre</label>
+						</li>
+						<li>
+							<input type="checkbox" id="genre-left-1">
+							<label class="genre" for="genre-left-1">genre</label>
+						</li>
+						<li>
+							<input type="checkbox" id="genre-left-2">
+							<label class="genre" for="genre-left-2">genre</label>
+						</li>
+						<li>
+							<input type="checkbox" id="genre-left-3">
+							<label class="genre" for="genre-left-3">genre</label>
+						</li>
+					</ul>
+				</div>
+			</div><!--end genre-list-->
+			 <input type="button" name="filter" id="filter-button" value="filter">
+		</div><!--song-options panel-->
+		</div>
+
+		<!-- end Song options panel box--
+		<!-- Song information div holding four Song Names maybe just h1's and p's for now -->
+
+		<div id="song-names-panel">	
+			
+				<h1>Song Name</h1>
+				<p> Artist Name | Album Name | Genre</p>
+				<h1>Song Name</h1>
+				<p> Artist Name | Album Name | Genre</p>
+				<h1>Song Name</h1>
+				<p> Artist Name | Album Name | Genre</p>
+				<h1>Song Name</h1>
+				<p> Artist Name | Album Name | Genre</p>
+			
+		</div>
+	</div><!--end options and names container-->
+</div> <!--end main container-->
 
 </body>
 </html>

@@ -1,0 +1,56 @@
+header {
+  padding-left: 20px;
+  border: solid black;
+  background-color: #FFB4B0;
+}
+
+li {
+  display: inline-block;
+}
+
+#options-and-names-container {
+  margin: 1em;
+}
+
+#song-options-panel {
+   float: left;
+   border: solid black;
+   background-color: #4DD7FA;
+   padding: 20px 0 20px 25px;
+   margin-top: 16px;
+   max-width: 30%;
+}
+
+.genres li {
+  display: inline;
+}
+
+
+.genre-left {
+  float: left;
+  max-width: 8%;
+  margin-right: 50px;
+}
+
+.genre-right input {  
+  display: block;
+}
+
+#filter-button {
+  margin-top: 10px;
+  float: center;
+}
+
+#song-names-panel {
+  text-align: justify;
+  border: solid black;
+  background-color: #FEFAC0;
+  margin-top: 16px;
+  margin-left: 275px;
+  padding-left: 20px;
+  
+}
+
+
+
+
