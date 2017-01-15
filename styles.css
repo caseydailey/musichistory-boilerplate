@@ -4,7 +4,7 @@ header {
   background-color: #FFB4B0;
 }
 
-li {
+nav li {
   display: inline-block;
 }
 
@@ -13,28 +13,18 @@ li {
 }
 
 #song-options-panel {
-   float: left;
+  
    border: solid black;
    background-color: #4DD7FA;
    padding: 20px 0 20px 25px;
-   margin-top: 16px;
+   margin-top: 1em;
    max-width: 30%;
 }
 
 .genres li {
-  display: inline;
+  display: inline-block;
 }
 
-
-.genre-left {
-  float: left;
-  max-width: 8%;
-  margin-right: 50px;
-}
-
-.genre-right input {  
-  display: block;
-}
 
 #filter-button {
   margin-top: 10px;
@@ -42,13 +32,14 @@ li {
 }
 
 #song-names-panel {
+  
   text-align: justify;
   border: solid black;
   background-color: #FEFAC0;
-  margin-top: 16px;
-  margin-left: 275px;
+  margin-top: 1em;
   padding-left: 20px;
-  
+  max-width: 40%; 
+ 
 }
 
 
