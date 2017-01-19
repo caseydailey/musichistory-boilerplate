@@ -3,17 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Music History</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-<div class="container">
+<div class="">
 <!-- navbar -->
-	<div>
+	<div class="">
 		<header>
 			<nav>	
-				<ul id="nav">
+				<ul id="nav" class="">
 					<li>View Music</li>
 					<li>|</li>
 					<li><a href="#">Add Music</a></li>
@@ -29,8 +31,8 @@
 <!-- filter options left side panel -->
 <!-- song-lenth needs to slide use input type="range"-->
 
-	<div id="option-and-names-container">
-		<div id="song-options-panel">
+	<div id="option-and-names-container" class="row container-fluid">
+		<div id="song-options-panel" class="col-sm-4">
 			<section>
 					<div class="song-length">
 						<label for="song-length">Song Length:</label><br> <!--need to better understand these values from MDN-->
@@ -58,53 +60,68 @@
 		        </select><br>
 			</div></br> 
 
-			<div class="genre-list">
+			<div class="genre-list row container">
 				<p>Genre:</p>
-					<ul id="genres">
-						<li>
-							<input type="checkbox" id="genre-right-1">
-							<label class="genre" for="genre-right-1">genre</label>
-						</li>
-						<li>
-							<input type="checkbox" id="genre-right-2">
-							<label class="genre" for="genre-right-2">genre</label>
-						</li>
-						<li>
-							<input type="checkbox" id="genre-right-3">
-							<label class="genre" for="genre-right-3">genre</label>
-						</li>
-						<li>
-							<input type="checkbox" id="genre-left-1">
-							<label class="genre" for="genre-left-1">genre</label>
-						</li>
-						<li>
-							<input type="checkbox" id="genre-left-2">
-							<label class="genre" for="genre-left-2">genre</label>
-						</li>
-						<li>
-							<input type="checkbox" id="genre-left-3">
-							<label class="genre" for="genre-left-3">genre</label>
-						</li>
-					</ul>
+					
+					<div class="col-xs-1">
+							<div class="checkbox">
+							  <label>
+							    <input type="checkbox" value="">
+							    genre
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+							    <input type="checkbox" value="">
+							    genre
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+							    <input type="checkbox" value="">
+							    genre
+							  </label>
+							</div>	
+					</div>
+					<div class="col-xs-1">
+							<div class="checkbox">
+							  <label>
+							    <input type="checkbox" value="">
+							    genre
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+							    <input type="checkbox" value="">
+							    genre
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+							    <input type="checkbox" value="">
+							    genre
+							  </label>
+							</div>	
+					</div>
+					
 			</div><!--end genre-list-->
-			 <input type="button" name="filter" id="filter-button" value="filter">
+			 <input class="btn btn-default" type="button" value="Filter">
 		</div><!--song-options panel-->
 		<!-- Song information div holding four Song Names maybe just h1's and p's for now-->
 
-		<div id="song-names-panel">	
+		<div id="song-names-panel" class="col-sm-8">	
 			
-				<h1>Song Name</h1>
+				<h2>Song Name</h2>
 				<p> Artist Name | Album Name | Genre</p>
-				<h1>Song Name</h1>
+				<h2>Song Name</h2>
 				<p> Artist Name | Album Name | Genre</p>
-				<h1>Song Name</h1>
+				<h2>Song Name</h2>
 				<p> Artist Name | Album Name | Genre</p>
-				<h1>Song Name</h1>
-				<p> Artist Name | Album Name | Genre</p>
-			
+				<h2>Song Name</h2>
+				<p> Artist Name | Album Name | Genre</p>	
 		</div>
 	</div><!--end options and names container-->
 </div> <!--end main container-->
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

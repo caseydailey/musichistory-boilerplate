@@ -1,0 +1,27 @@
+$font-stack: Helvetica, sans-serif;
+$nav-color: #FFB4B0;
+$options-panel-color: #4DD7FA;
+$names-panel-color: #FEFAC0;
+
+
+#song-options-panel {
+	padding-top: 1em;
+	border: 5px solid black;
+	background-color: $options-panel-color;
+	min-height: 28.8em;
+}
+
+#song-names-panel {
+	padding: 1em 1em 1em 8em;
+	border: 5px solid black;
+	background-color: $names-panel-color;
+}
+
+
+
+
+
+
+
+
+
