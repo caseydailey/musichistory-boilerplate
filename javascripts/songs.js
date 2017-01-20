@@ -94,8 +94,7 @@ var songsDiv = document.getElementById("song-names-panel");
 for (var i = 0; i < cleanSongs.length; i++) {
     
     var firstSplit = cleanSongs[i].split(" - by ");
-	console.log('firstSplit:', firstSplit);
-
+	
 //returns an array with what was before " - by " 
 //and what was after (at current index item) ["song name", "the rest of the string that was cleanSongs[i]"]
 //firstSplit[0] is songName
