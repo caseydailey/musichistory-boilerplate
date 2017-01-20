@@ -10,9 +10,9 @@
 </head>
 
 <body>
-<div class="">
+<div id="main-box" class="">
 <!-- navbar -->
-	<div class="">
+	<div id="nav" class="">
 		<header>
 			<nav>	
 				<ul id="nav" class="">
@@ -34,12 +34,12 @@
 	<div id="option-and-names-container" class="row container-fluid">
 		<div id="song-options-panel" class="col-sm-4">
 			<section>
-					<div class="song-length">
+					<div id="song-length-box">
 						<label for="song-length">Song Length:</label><br> <!--need to better understand these values from MDN-->
-						<input type="range" name="song-length" id="song-length" min="0"	max="100" step="1.0" value="50" /> 
+						<input type="range" name="song-length" id="song-length" min="0"	max="100" step=".5" value="50" /> 
 					</div>
 			</section>
-			<div class="artist">
+			<div id="artist-div">
 		          <label name="artist">Artist:</label><br>
 		            <select id="artist">
 		              <option value="">Brian Eno</option><!--populate with artists-->
@@ -49,7 +49,7 @@
 		              <option value="">Brian Eno</option><!--populate with artists-->
 		            </select><br>
 			</div></br>
-			<div class="Album">
+			<div id="album-div">
 		      <label name="Album">Album:</label><br>
 		        <select id="Album">
 		          <option value="">Reflection</option><!--populate with albums-->
@@ -60,9 +60,8 @@
 		        </select><br>
 			</div></br> 
 
-			<div class="genre-list row container">
+			<div id="genre-list" class="container">
 				<p>Genre:</p>
-					
 					<div class="col-xs-1">
 							<div class="checkbox">
 							  <label>
@@ -105,7 +104,9 @@
 					</div>
 					
 			</div><!--end genre-list-->
-			 <input class="btn btn-default" type="button" value="Filter">
+			<div id="button-box">
+			 <input id="filter-button" class="btn btn-default" type="button" value="Filter">
+			</div>
 		</div><!--song-options panel-->
 		<!-- Song information div holding four Song Names maybe just h1's and p's for now-->
 

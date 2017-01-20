@@ -2,28 +2,93 @@ body {
   padding: 1em;
 }
 
+#main-box {
+
+  margin: 1em;
+}
+
 header {
+
   border: solid black;
   background-color: #FFB4B0;
 }
 
 nav li {
+
   display: inline-block;
 }
 
+#nav {
+  padding: .5em 1em;
+  margin: 0 .5em;
+}
+
+#option-and-names-container {
+
+    margin: .5em;
+    display: flex;
+    align-items: stretch;
+}
+
 #song-options-panel {
+
    padding-top: 1em;
-   border: 5px solid black;
+   margin-right: .5em;
+   border: solid black;
    background-color: #4DD7FA;
-   min-height: 100%;
+}
+
+#song-length-box {
+
+  padding-left: 2em;
+}
+
+#song-length {
+
+  max-width: 75%;
+}
+
+#artist-div {
+
+  margin-top: 1em;
+  padding: 0 0 .5em 2em;
+}
+
+#album-div {
+
+  margin-top: 1em;
+  padding: 0 0 .5em 2em;
+}
+
+#genre-list {
+
+  font-size: 1em;
+  padding-left: 2em;
+}
+
+#genre-list p {
+
+  margin-bottom: 0;
+}
+
+#button-box {
+
+  display: flex;
+  height: 4em;
   
 }
 
+#filter-button {
+
+  margin: auto;
+}
+
+
 #song-names-panel {
-  padding: 1em 1em 1em 8em;
+
   border: solid black;
   background-color: #FEFAC0;
-  min-height: 100%; 
+  padding: 1em 0 3em 5em;  
 }
 
 
