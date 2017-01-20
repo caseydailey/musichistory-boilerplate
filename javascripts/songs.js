@@ -84,8 +84,9 @@ console.log(cleanSongs);
 //that was a dead end.
 
 
-//william caldwell had this idea (which i think is almost perfect) but 
-//we're gonna need those extra substrings.
+//william caldwell had this idea (which i think is almost perfect) 
+//and have tried to replicate verbatim below 
+//we're gonna need those extra substrings, though...
 
 //first we'll need to target an element in the DOM
 
@@ -101,8 +102,8 @@ for (var i = 0; i < cleanSongs.length; i++) {
 
     var songName = firstSplit[0];
 
-//whats left is split at the the substring " on the album "
-//which return the array secondSplit ["artist", "album"]
+//what's left is split at the the substring " on the album "
+//which returns the array secondSplit ["artist", "album"]
 	
     var secondSplit = firstSplit[1].split(" on the album ");
 
@@ -114,7 +115,9 @@ for (var i = 0; i < cleanSongs.length; i++) {
 //and then we print, incrementally setting innerHTML
 
 songsDiv.innerHTML += `<h4> ${songName} </h4>
-					   <p> ${artist} | ${album} | music </p>`;					   
+					   <p> ${artist} | ${album} | music </p>`;
+
+//beautiful. thanks again to william for his help formulating this approach					   					   
 
 }
 
