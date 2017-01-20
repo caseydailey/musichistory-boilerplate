@@ -78,15 +78,15 @@ console.log(cleanSongs);
 //}
 //
 //console.log(trimmedSongs);
-//
-////Must add each string to the DOM in index.html in the main content area.
-//
-//that was a dead end.
 
+//that was a dead end.
+//because those substrings were the key to dividing these strings into 
+//song, artist, and album and actually printing them to look like what's in the mock-up
 
 //william caldwell had this idea (which i think is almost perfect) 
 //and have tried to replicate verbatim below 
-//we're gonna need those extra substrings, though...
+//i trimmed it up and used a string template literal for the concatenation,
+//but the solution's his
 
 //first we'll need to target an element in the DOM
 
