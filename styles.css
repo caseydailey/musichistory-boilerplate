@@ -91,6 +91,26 @@ nav li {
   padding: 1em 0 3em 5em;  
 }
 
+/********************
+
+add music view
+**************************/
+
+.add-song {
+
+  border: 2px solid black;
+  
+}
+
+.add-song input {
+  margin: 3em;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+#add-song {
+  margin-right: 2em;
+}
 
 
 
